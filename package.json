@@ -4,8 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon ./index.js localhost 8080"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "buda-promise": "^0.1.5",
+    "node-telegram-bot-api": "^0.51.0",
+    "nodemon": "^2.0.6",
+    "numeral": "^2.0.6"
+  }
 }

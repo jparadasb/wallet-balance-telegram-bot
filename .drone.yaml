@@ -1,0 +1,13 @@
+pipeline:
+  build:
+    image: node
+    commands:
+      - npm install
+  publish:
+    image: plugins/docker
+    repo: registry.paradas.co/drone/rafa_crypto_bot
+    registry: registry.paradas.co
+    secrets: [docker_username, docker_password]
+    tags:
+      - latest
+      - build-${DRONE_BUILD_NUMBER}
