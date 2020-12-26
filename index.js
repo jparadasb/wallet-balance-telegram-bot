@@ -79,6 +79,7 @@ Bot.onText(/Balance en CLP/, (msg) => {
             },
           },
         ]) => {
+          console.log(`${new Date().toISOString()} request: ${msg.chat.id} `);
           Bot.sendMessage(
             msg.chat.id,
             `<b>Tu balance en ${destiny_currency}:</b> $${

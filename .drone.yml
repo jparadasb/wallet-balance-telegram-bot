@@ -5,7 +5,7 @@ pipeline:
       - npm install
   publish:
     image: plugins/docker
-    repo: registry.paradas.co/drone/rafa_crypto_bot
+    repo: registry.paradas.co/drone/rafa-crypto-bot
     registry: registry.paradas.co
     secrets: [docker_username, docker_password]
     tags:
